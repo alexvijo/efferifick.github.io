@@ -6,7 +6,7 @@ email: erick@ceci-nest-pas.me
 #  line in _config.yml. It will appear in your document head meta (for
 #  Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog/
-#url: "ceci-nest-pas.me" # the base hostname & protocol for your site
+url: "ceci-nest-pas.me" # the base hostname & protocol for your site
 twitter_username: erickomoto 
 github_username:  efferifick
 
