@@ -2,6 +2,24 @@
 layout: default
 section_id: portfolio
 works:
+  - image: images/compiling.png
+    title: Compiler Design and Development
+    desc: "Compiler for experimental language with garbage collection,
+    arrays, generators, filters and LLVM backend."
+    src: https://github.com/artemcm/DashAB-Compiler-Front-End
+  - image: images/dip.jpg
+    title: Digital Image Processing
+    desc: "Image enhancement, restoration, segmentation and analysis."
+    src: https://github.com/efferifick/image-processing
+  - image: images/plkr.png
+    title: Distributed social network
+    desc: "Distributed social network using Django."
+    src: https://github.com/efferifick/CMPUT404-project-socialdistribution
+  - image: images/synsim.png
+    title: Synesthesia Simulator
+    desc: Firefox add-on to simulate synesthesia.
+    src: https://github.com/efferifick/synesthesia-simulator
+
 ---
 
 <div class='full' style='background: #333'>
@@ -12,13 +30,11 @@ works:
   </div>
   <div class='two spacing'></div>
 </div>
-<div class='two spacing'></div>
-<div class='spacing'></div>
 <div class='mod modMasonryGallery'>
   <ul class='gallery'>
     {% for work in page.works %}
       <li class='{{work.class}}'>
-        <a href='portfolio-item.html'>
+      <a href='{{work.src}}'>
           <img alt="" src="{{work.image}}" />
           <div class='overlay'>
             <div class='thumb-info'>
